@@ -1,0 +1,15 @@
+﻿@model List<string>
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="p-4">
+    <h2 class="text-primary">Blob Storage Hierarchy</h2>
+    <hr />
+    <br />
+    @foreach(var item in Model)
+    {
+        <p>@item</p>
+    }
+</div>
